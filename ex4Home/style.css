@@ -36,3 +36,11 @@ hr{
     height: 15px;
     width: auto;
 }
+
+button{
+    border-radius: 7px;
+    border: none;
+    height: 30px;
+    width: 100px;
+    background-color: rgb(210, 236, 255);
+}
