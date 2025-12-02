@@ -1,0 +1,58 @@
+form
+{
+    border: solid 2px black;
+    width: 300px;
+    background-color: lightblue;
+    border-radius: 8px;
+}
+
+body
+{
+    background-color: lightgoldenrodyellow;
+}
+#Submit
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightcoral;
+    border: none;
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: large;
+    color: white;
+}
+
+input
+{
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    width: 95%;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+label{
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    color: dimgrey;
+}
+
+.password
+{
+    font-weight: bold;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    color: darkred;
+}
+
+.name{
+    font-weight: bold;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color: darkblue;
+}
