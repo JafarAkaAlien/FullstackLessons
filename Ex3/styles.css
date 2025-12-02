@@ -1,0 +1,20 @@
+img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+ul{
+    list-style: square;
+}
+
+body{
+    background-color: black;
+}
+
+h1 , p, th, td, li{
+    color: aquamarine;
+}
