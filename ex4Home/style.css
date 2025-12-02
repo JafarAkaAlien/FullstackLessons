@@ -1,0 +1,38 @@
+body{
+    padding: 20px;
+    background-color: cadetblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form{
+    background-color: aquamarine;
+    width: 270px;
+    border-radius: 8px;
+    border:2px solid;
+}
+
+input{
+    
+    text-align: center;
+    width: 95%;
+    border:solid rgb(165, 165, 248);
+    border-radius: 7px;
+    height: 30px;
+}
+
+.radio{
+    height: 15px;
+}
+hr{
+    border: solid 1.5px black;
+}
+
+#ad
+{
+    border: solid rgb(255, 145, 145);
+}
+
+#checkbox{
+    height: 15px;
+    width: auto;
+}
