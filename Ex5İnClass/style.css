@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Nabla:EDPT,EHLT@58,4&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+div {
+
+    flex-direction: row;
+    width: 300px;
+    height: auto;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: solid #fa8072 1px;
+    padding: 10px;
+    margin: 10px;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+}
+
+video {
+    width: 100%;
+}
+
+button {
+
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+}
