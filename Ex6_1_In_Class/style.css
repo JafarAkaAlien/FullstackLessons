@@ -1,0 +1,48 @@
+div{
+    width: 250px;
+    
+    background-color: white;
+    border-radius: 8px;
+}
+
+img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.fa-envelope{
+    margin-left: 165px;
+    
+}
+
+.basliq{
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.boz{
+    color: rgb(162, 162, 162);
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.daxili_div{
+    padding: 5px;
+    width: 90%;
+}
+
+.icon_div{
+    padding: 0px;
+    width: 240px;
+}
+
+.qiymet{
+    font-weight: bold;
+    margin: 0px;
+}
+
+.description_p{
+    color: black;
+}
