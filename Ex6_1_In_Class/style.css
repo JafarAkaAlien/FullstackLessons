@@ -1,6 +1,16 @@
-div{
-    width: 250px;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grand{
+    display: flex;
+    justify-content: space-between;
     
+}
+.parent{
+    width: 250px;
+    margin: 5px;
     background-color: white;
     border-radius: 8px;
 }
@@ -10,9 +20,8 @@ img{
     border-radius: 8px;
 }
 
-.fa-envelope{
-    margin-left: 165px;
-    
+.content{
+    margin: 5px;
 }
 
 .basliq{
@@ -27,16 +36,11 @@ img{
 body{
     background-color: antiquewhite;
 }
-
+ 
 .daxili_div{
-    padding: 5px;
-    width: 90%;
-}
+    padding: 10px;
+} 
 
-.icon_div{
-    padding: 0px;
-    width: 240px;
-}
 
 .qiymet{
     font-weight: bold;
@@ -46,3 +50,11 @@ body{
 .description_p{
     color: black;
 }
+
+
+.icon_div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
