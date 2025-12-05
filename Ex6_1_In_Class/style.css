@@ -3,12 +3,12 @@
     padding: 0;
 }
 
-.grand{
+.parent{
     display: flex;
     justify-content: space-between;
     
 }
-.parent{
+.kart{
     width: 250px;
     margin: 5px;
     background-color: white;
