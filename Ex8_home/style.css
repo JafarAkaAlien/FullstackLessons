@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Header ------------------------------- */
+
+
+/* Nav --------------------------------- */
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    gap: 200px;
+    align-items: center;
+    background-color: antiquewhite;
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+
+    ul {
+        display: flex;
+        width: 75%;
+        justify-content: space-between;
+        font-size: x-large;
+
+        li a {
+            color: black;
+            letter-spacing: 2px;
+
+        }
+
+        li a:hover {
+
+            color: blueviolet;
+            font-size: xx-large;
+        }
+
+    }
+}
+
+/* nav end---------------------------------------------------- */
+
+/* Main -----------------------------------------------------  */
+
+/* slider class ---------------------------------------------- */
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 40px;
+    row-gap: 20px;
+
+
+    .left-aside {
+        height: auto;
+        border-radius: 2px;
+        background-color: rgba(127, 255, 212, 0.09);
+        width: 120px;
+
+        box-shadow: -1px 2px 1px 0.1px black;
+
+
+        ul {
+            row-gap: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+    }
+
+    ul li {
+        padding: 5px;
+    }
+
+
+    a {
+        color: black;
+        font-size: 20px;
+    }
+
+    a:hover {
+        font-size: 22px;
+        color: brown
+    }
+
+
+    article {
+        width: 50%;
+
+        p {
+            font-size: large;
+        }
+    }
+
+    img {
+        width: 250px;
+    }
+}
+
+
+
+
+
+/* End of slider --------------------------------------*/
+
+
+/* Cards Start --------------------------------------- */
+
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+
+    .card{
+        
+    }
+
+
+}
