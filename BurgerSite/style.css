@@ -1,0 +1,161 @@
+*{
+    scrollbar-width: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  transition: 0.5s;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+
+.content{
+    display: flex;
+    justify-content: end;
+
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.ingredient-name{
+    z-index: 15;
+    position: relative;
+    left:350px;
+    color: black;
+    ul{
+        color: transparent;
+        text-decoration: underline;
+        height: 100vh;
+        margin-top: 15px;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+}
+
+
+.burger{
+    position: relative;
+    width: 45%;
+    height: 100vh;
+    .bun, .sogan1, .sogan2, .lettuce,.xiyar,.pomidor,.pendir,.et,.bacon,.bunend{
+        position: absolute;
+        
+
+    }
+
+    .bun{
+        z-index: 10;
+        top:0;
+    }
+
+    .sogan1{
+        z-index:9;
+        top: 180px;
+        left: 20px;
+    }
+    .sogan2{
+        z-index:9;
+        top: 180px;
+        left: 250px;
+    }
+    .lettuce{
+        z-index: 8;
+        top: 50px;
+    }
+    .xiyar{
+        z-index: 7;
+        top: 220px;
+    }
+    .pomidor{
+        z-index: 6;
+        top: 250px;
+    }
+    .pendir{
+        z-index: 5;
+        top: 200px;
+    }
+    .et{
+        z-index: 4;
+        top: 300px;
+    }
+    .bacon{
+        z-index: 3;
+        top: 320px;
+    }
+    .bunend{
+        z-index: 2;
+        top: 305px;
+    }
+    
+    .backdiv{
+        height: 100vh;
+        background-color: orange;
+        width: 100%;
+        border-bottom-left-radius: 50px;
+        position: absolute;
+        left: 200px;
+    }
+    
+
+
+
+
+
+
+
+
+    
+
+}
+
+.content:hover{
+    .bun{
+        top: -90px;
+    }
+    .sogan1{
+        top: 120px;
+    }
+    .sogan2{
+        top: 120px;
+    }
+
+    .xiyar{
+        top: 180px;
+    }
+
+    .lettuce{
+        top: 10px;
+    }
+    .pomidor{
+        top: 260px;
+    }
+
+    .pendir{
+        top: 250px;
+    }
+
+    .et{
+        top: 350px;
+    }
+
+    .bacon{
+        top: 400px;
+    }
+
+    .bunend{
+        top: 430px;
+    }
+
+    .ingredient-name ul{
+        color: black;
+    }
+}
+
