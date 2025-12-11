@@ -285,7 +285,7 @@ main {
 
 }
 
-.content:hover {
+.content:hover{
     .bun {
         top: -90px;
     }
