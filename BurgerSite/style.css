@@ -1,0 +1,332 @@
+@import url(https://db.onlinewebfonts.com/c/0976a2619014c5855690b7509fab4c6e?family=Helvetica+Now+Display);
+@import url(https://db.onlinewebfonts.com/c/c632fa0216eed0c3ee8384ffb53b9f5e?family=Cooper);
+
+* {
+    scrollbar-width: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+body {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Headers starts ------------------------------ */
+header {
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    width: 90%;
+    height: 100px;
+
+    /* background-color: antiquewhite; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .logo {
+        width: 70px;
+        height: 70px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            color: white;
+        }
+    }
+
+    .nav-list {
+        width: 60%;
+        margin-left: 150px;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            li a {
+
+                font-size: 20px;
+                font-weight: 400;
+                color: rgb(97, 97, 97);
+                font-family: "Helvetica Now Display";
+            }
+
+            li .orange {
+                color: #df6207;
+            }
+
+            li .white {
+                color: white;
+            }
+
+        }
+    }
+
+    .icons {
+
+
+        a {
+            padding-left: 10px;
+            color: white;
+        }
+    }
+}
+
+
+
+
+
+/* Main starts---------------------------------- */
+main {
+    z-index: 0;
+    flex-wrap: wrap;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100vh;
+
+
+    .right-side {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+/* 
+        background-color: aliceblue;
+        border: 1px solid black; */
+
+        p {
+            font-size: 32px;
+            font-family: "Helvetica Now Display";
+        }
+
+        .p-mohtesem {
+            font-size: 80px;
+            margin-top: 20px;
+            color: #64240F;
+            font-family: "Cooper";
+
+        }
+
+        .p-burger {
+            font-size: 80px;
+            color: #DF6207;
+            font-family: "Cooper";
+
+        }
+
+
+        button {
+            background-color: #DF6207;
+            margin-top: 30px;
+            width: 208px;
+            height: 60px;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-family:  "Helvetica Now Display";
+            font-size: 18px;
+        }
+
+
+    }
+
+    .backdiv {
+        height: 100vh;
+        background-image: linear-gradient(to right, #df6207, #fc9b43);
+        width: 400px;
+        border-bottom-left-radius: 50px;
+        position: absolute;
+        right: -77px;
+    }
+}
+
+/* 
+.content {
+    display: flex;
+    justify-content: end;
+
+} */
+
+
+
+.ingredient-name {
+    z-index: 15;
+    position: absolute;
+    left: -280px;
+
+    color: black;
+
+    ul {
+        color: transparent;
+        text-decoration: underline;
+        height: 90vh;
+        margin-top: 53px;
+        padding: 35px 20px 20px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 19px;
+    }
+}
+
+
+.burger {
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+    width: 40%;
+    height: 90vh;
+
+    .bun,
+    .sogan1,
+    .sogan2,
+    .lettuce,
+    .xiyar,
+    .pomidor,
+    .pendir,
+    .et,
+    .bacon,
+    .bunend {
+        position: absolute;
+
+
+    }
+
+    .bun {
+        z-index: 10;
+        top: 0;
+        left: -10px;
+    }
+
+    .sogan1 {
+        z-index: 9;
+        top: 180px;
+        left: 20px;
+    }
+
+    .sogan2 {
+        z-index: 9;
+        top: 180px;
+        left: 250px;
+    }
+
+    .lettuce {
+        z-index: 8;
+        top: 50px;
+    }
+
+    .xiyar {
+        z-index: 7;
+        top: 220px;
+    }
+
+    .pomidor {
+        z-index: 6;
+        top: 250px;
+    }
+
+    .pendir {
+        z-index: 5;
+        top: 200px;
+    }
+
+    .et {
+        z-index: 4;
+        top: 300px;
+    }
+
+    .bacon {
+        z-index: 3;
+        top: 320px;
+    }
+
+    .bunend {
+        z-index: 2;
+        top: 305px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+.content:hover{
+    .bun {
+        top: -90px;
+    }
+
+    .sogan1 {
+        top: 120px;
+    }
+
+    .sogan2 {
+        top: 120px;
+    }
+
+    .xiyar {
+        top: 180px;
+    }
+
+    .lettuce {
+        top: 10px;
+    }
+
+    .pomidor {
+        top: 260px;
+    }
+
+    .pendir {
+        top: 250px;
+    }
+
+    .et {
+        top: 350px;
+    }
+
+    .bacon {
+        top: 400px;
+    }
+
+    .bunend {
+        top: 430px;
+    }
+
+    .ingredient-name ul {
+        color: black;
+    }
+}

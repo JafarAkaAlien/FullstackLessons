@@ -1,0 +1,36 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    cursor: url("icon.png") ,auto;
+        transition: 0.5s;
+}
+
+
+
+@keyframes gezme {
+    0%
+    {
+        background-color: aqua;
+        transform: translate(0vh) rotate(0deg);
+    }
+    25%{
+        background-color: blue;
+        transform: translateX(90vw) rotate(90deg); 
+    }
+    50%{
+        transform: translate(90vw, 80vh) rotate(180deg);
+        background-color: red;
+
+           
+    }
+    75%{
+        background-color: black;
+        transform: translate(0,80vh) rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
