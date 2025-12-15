@@ -5,7 +5,8 @@
     list-style: none;
     color: black;
 }
-button{
+
+button {
     padding: 10px 20px;
     border-radius: 50%;
 }
@@ -26,7 +27,7 @@ header {
         padding: 0px 20px;
 
 
-        .site-name{
+        .site-name {
             /* background-color: aqua; */
             font-size: 230px;
             font-weight: 900;
@@ -34,10 +35,10 @@ header {
         }
 
 
-        .menu{
+        .menu {
             /* background-color: aqua; */
 
-            #quote{
+            #quote {
                 font-size: 22px;
                 letter-spacing: -1px;
                 text-transform: uppercase;
@@ -49,17 +50,20 @@ header {
             justify-content: space-between;
             height: 150px;
         }
-        ul{
+
+        ul {
             display: flex;
             justify-content: space-between;
             border-top: 1px solid black;
             padding-top: 15px;
-            a{
+
+            a {
                 font-size: 30px;
                 font-weight: bold;
                 transition: 0.3s;
             }
-            a:hover{
+
+            a:hover {
                 color: rgba(0, 0, 0, 0.512);
             }
         }
@@ -67,51 +71,53 @@ header {
 
 
 
-    .nav-img{
+    .nav-img {
         background-image: url(assets/decorative_border.png);
         width: 100%;
         height: 33px;
         background-repeat: repeat-x;
         /* animation: nav-image-mover 30s linear infinite; */
         transition: 2s;
-        
+
     }
-   
-   
+
+
 
 }
+
 /* Main start =================== */
 
 
-main{
-    
+main {
+
     /* Section 1 CTE ===============================*/
-    .face{
+    .face {
         height: 500px;
         background-image: url(assets/ctasection.png);
         background-size: cover;
         background-position: center;
     }
 
-    aside{
+    aside {
         width: 30%;
         height: 460px;
         background-color: #CD9D65;
         padding: 20px;
 
-        .reklam{
+        .reklam {
             text-shadow: 1px 1px 1px black;
             text-transform: uppercase;
             font-weight: bold;
             font-size: 26px;
             width: 100%;
         }
-        .shopnow{
+
+        .shopnow {
             background-color: black;
             color: #CD9D65;
             font-size: 20px;
             font-weight: bold;
-            
+
             margin-top: 100px;
         }
     }
@@ -119,15 +125,16 @@ main{
 
     /* About-us Section ==================== */
 
-    .about-us{
-        p{
+    .about-us {
+        p {
             font-size: 60px;
             text-transform: uppercase;
             width: 90%;
             padding: 20px;
             font-weight: bold;
         }
-        button{
+
+        button {
             margin: 20px;
             margin-bottom: 80px;
             font-size: 20px;
@@ -135,16 +142,17 @@ main{
             background-color: white;
             transition: 0.2s;
         }
-        button:hover{
+
+        button:hover {
             background-color: rgb(201, 201, 201);
             cursor: pointer;
-            
+
         }
     }
 
     /* Featured start =================== */
 
-    .featured{
+    .featured {
         width: 100%;
         height: 100vh;
         background-image: url(assets/featured.png);
@@ -153,43 +161,65 @@ main{
         display: flex;
         justify-content: center;
         align-items: end;
-        
 
-        .text-data{
+
+        .text-data {
             /* border:  white 1px solid; */
             width: 34%;
             margin-bottom: 4%;
 
-            .content{
+            .content {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
 
-            p{
+            p {
                 text-align: center;
                 color: white;
                 padding: 5px;
-                
-                
+
+
             }
-            .new{
+
+            .new {
                 border: 1px solid white;
                 border-radius: 50%;
                 display: inline;
                 padding: 5px 20px;
                 font-weight: bold;
             }
-            .main-text{
+
+            .main-text {
                 font-size: 80px;
                 font-weight: bold;
                 text-transform: uppercase;
             }
 
-            .description{
+            .description {
                 width: 90%;
                 font-size: 18px;
                 text-transform: uppercase;
+            }
+        }
+    }
+
+    /* Cards begin =========================== */
+
+    .items {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .cards {
+            width: 80%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .card {
+                width: 600px;
+                height: auto;
             }
         }
     }
@@ -205,12 +235,13 @@ main{
 
 
 
- @keyframes nav-image-mover {
-        0%{
-            
-            background-position: 0%;
-        }        
-        100%{
-            background-position: 100%;
-        }
+@keyframes nav-image-mover {
+    0% {
+
+        background-position: 0%;
     }
+
+    100% {
+        background-position: 100%;
+    }
+}
