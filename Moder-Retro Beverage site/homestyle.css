@@ -11,6 +11,27 @@ button {
     border-radius: 50%;
 }
 
+/* Footer and header both uses them =================== */
+
+.site-name {
+    /* background-color: aqua; */
+    font-size: 230px;
+    font-weight: 900;
+    letter-spacing: -10px;
+}
+
+.nav-img {
+    background-image: url(assets/decorative_border.png);
+    width: 100%;
+    height: 33px;
+    background-repeat: repeat-x;
+    /* animation: nav-image-mover 30s linear infinite; */
+    transition: 2s;
+
+}
+
+
+
 /* Header start ========================*/
 
 header {
@@ -27,12 +48,7 @@ header {
         padding: 0px 20px;
 
 
-        .site-name {
-            /* background-color: aqua; */
-            font-size: 230px;
-            font-weight: 900;
-            letter-spacing: -10px;
-        }
+
 
 
         .menu {
@@ -71,15 +87,7 @@ header {
 
 
 
-    .nav-img {
-        background-image: url(assets/decorative_border.png);
-        width: 100%;
-        height: 33px;
-        background-repeat: repeat-x;
-        /* animation: nav-image-mover 30s linear infinite; */
-        transition: 2s;
 
-    }
 
 
 
@@ -96,31 +104,39 @@ main {
         background-image: url(assets/ctasection.png);
         background-size: cover;
         background-position: center;
+
+        aside {
+            width: 30%;
+            height: 460px;
+            background-color: #CD9D65;
+            padding: 20px;
+
+            .reklam {
+                text-shadow: 1px 1px 1px black;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 26px;
+                width: 100%;
+            }
+
+            .shopnow {
+                background-color: black;
+                color: #CD9D65;
+                font-size: 20px;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 100px;
+                transition: 0.5s;
+            }
+            .shopnow:hover{
+                background-color: #CD9D65;
+                color: black;
+                box-shadow: 3px 1px 2px 0.1px rgba(0, 0, 0, 0.2);
+            }
+        }
     }
 
-    aside {
-        width: 30%;
-        height: 460px;
-        background-color: #CD9D65;
-        padding: 20px;
 
-        .reklam {
-            text-shadow: 1px 1px 1px black;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 26px;
-            width: 100%;
-        }
-
-        .shopnow {
-            background-color: black;
-            color: #CD9D65;
-            font-size: 20px;
-            font-weight: bold;
-
-            margin-top: 100px;
-        }
-    }
 
 
     /* About-us Section ==================== */
@@ -210,9 +226,10 @@ main {
         display: flex;
         justify-content: center;
         width: 100%;
+
         .cards {
             width: 80%;
-            margin-top: 20px;
+            margin: 20px 20px 40px 20px;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -220,13 +237,123 @@ main {
             .card {
                 width: 600px;
                 height: auto;
+
+                img{
+                    transition: 0.5s;
+                }
+                img:hover{
+                    opacity: 0.7;
+                }
+
+                .information {
+                    margin: 20px 0px;
+                    font-size: 20px;
+                }
+
+                .find {
+                    margin: 20px 0px;
+                    font-size: 20px;
+                }
             }
+        }
+    }
+
+    /* Find us section  ========================*/
+
+    .find-us-section {
+
+        background-color: #CD9D65;
+        margin: 5px 0px;
+        padding: 0px 20px;
+
+        p {
+            font-size: 100px;
+            letter-spacing: -7px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: -25px 0px;
+        }
+
+        .lavande,
+        .spezia,
+        .primavera {
+            color: #613B0F;
+        }
+
+    }
+
+
+    /* Ending begins ========================= */
+
+    .ending {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        background-color: rgb(255, 255, 255);
+        aside {
+            width: 50%;
+
+            p {
+                font-size: 30px;
+                padding: 20px;
+                
+            }
+        }
+
+        .backimg {
+            background-image: url(assets/ending.png);
+            width: 50%;
+            height: 600px;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 
 }
 
+/* Footer begins ============================== */
 
+footer{
+    background-color: #CD9D65;
+ .info-stuff{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+   
+    aside{
+        width: 50%;
+        
+        p{
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 20px;
+            transition: 5s;
+        }
+        a{
+            transition: 0.3s;
+        }
+        a:hover{
+            color: rgba(6, 6, 6, 0.447);
+        }
+    }
+
+    .left-side{
+        p{
+            text-transform: uppercase;
+        }
+    }
+
+
+ }   
+
+    .logo-rights{
+        margin: 0px 20px 20px 20px;
+        p{
+            font-size: 20px;
+        }
+    }
+}
 
 
 
