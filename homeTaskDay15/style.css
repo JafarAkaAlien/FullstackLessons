@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;    
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.cover:nth-child(odd){
+    .price{
+        animation: price-anime 2s   infinite linear;
+    }
+    .price::before{
+        content: "Sale! ";
+    }
+}
+
+@keyframes price-anime {
+    0%{
+        color: black;
+    }
+    33%{
+        color: rgb(2, 162, 60);
+    }
+    66%{
+        color: red;
+    }
+    100%{
+        color: blue;
+    }
+}
+
+.cover{
+    width: 250px;
+    height: 355px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.825);
+    /* box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.153); */
+    overflow-y: hidden;
+    position: relative;
+    
+    
+}
+.cover::after{
+    content: "" ;
+    position: absolute;
+    bottom: 2px;
+    right: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+
+.card{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    background-color: rgba(255, 228, 196, 0.375);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transform: translateY(200px);
+    transition: 3.5s;
+    /* box-shadow: 0px 0px 6px 3px black; */
+    .img{
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        width: 250px;
+        height: 250px;
+        background-image: url(assets/monalisa.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .title{
+        font-size: 24px;
+        color: #434141bd;
+    }
+
+    a{
+        color: #000;
+        background-color: rgb(245, 189, 116);
+        padding: 5px 15px;
+        border-radius: 7px;
+        transition: 0.3s;
+    }
+    a:hover{
+        background-color: rgb(249, 199, 134);
+    }
+
+}
+
+.card:hover{
+    transition: 0.5s;
+    transform: translateY(0px);
+    background-color: bisque;
+}
