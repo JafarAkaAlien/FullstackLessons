@@ -1,0 +1,35 @@
+
+main{
+
+    button{
+        width: 200px;
+        height: 100px;
+        font-size: 20px;
+        background-image: linear-gradient(to right, blue, green, red);
+        border-radius: 8px;
+        animation: op infinite 2s linear ;
+        color:white;
+        border: none;
+    }
+
+    .at{
+        position: relative;
+    }
+
+    .user{
+        display: flex;
+        gap: 20px;
+    }
+
+
+}
+
+
+@keyframes op {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
