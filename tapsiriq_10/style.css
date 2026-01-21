@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.tapaz {
+    color: orangered;
+    font-size: 35px;
+}
+
+.fa-circle-plus {
+    color: orangered;
+
+}
+
+.fa-solid {
+    font-size: 35px;
+}
+
+header {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 40px;
+    }
+}
+
+
+main {
+    .side-bar {
+        position: relative;
+        width: 300px;
+        height: 70vh;
+        border: 1px solid black;
+        transition: 1s;
+        nav {
+
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 40px;
+        }
+        ul{
+            li{
+                margin: 40px;
+                font-size: 20px;       
+            }
+        }
+    }
+
+    .position-hidden{
+        transform: translateX(-400px);
+    }
+}

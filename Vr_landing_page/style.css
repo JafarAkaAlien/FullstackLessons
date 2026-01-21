@@ -6,8 +6,10 @@
 }
 
 body {
-    background-color: transparent;
-     overflow-x: hidden;
+    width: 100%;
+    background-color: black;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 header {
@@ -34,11 +36,24 @@ header {
                 color: white;
                 transition: 0.3s;
             }
-            a:hover{
+
+            a:hover {
                 color: #cbd0ff;
             }
         }
 
+        .fa-bars {
+            color: white;
+            font-size: 20px;
+            display: none !important;
+
+        }
+
+        .signup {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
 
         button {
             height: fit-content;
@@ -50,18 +65,18 @@ header {
             font-size: 14px;
             transition: 0.3s;
         }
-        button:hover{
-                background-image: linear-gradient(#1F34E7, rgb(167, 201, 215));
-                border: 1px solid transparent;
-            }
+
+        button:hover {
+            background-image: linear-gradient(#1F34E7, rgb(167, 201, 215));
+            border: 1px solid transparent;
+        }
     }
 }
 
 
 /* main begins ------------------------------ */
 main {
-   
-    background-color: transparent;
+
     width: 100%;
     display: flex;
     align-items: center;
@@ -69,13 +84,13 @@ main {
 
     .landing {
         display: flex;
-        width: 90%;
+        width: 100%;
         height: 80vh;
         align-items: center;
         justify-content: center;
 
         .right {
-            width: 40%;
+            width: 400px;
 
             p {
                 color: white;
@@ -100,7 +115,7 @@ main {
                 height: fit-content;
                 padding: 4px 14px;
                 background-color: transparent;
-                
+
                 border: 1px solid white;
                 border-radius: 5px;
                 color: white;
@@ -108,7 +123,8 @@ main {
                 cursor: pointer;
                 transition: 0.5s;
             }
-            button:hover{
+
+            button:hover {
                 background-image: linear-gradient(#1F34E7, rgb(167, 201, 215));
                 border: 1px solid transparent;
             }
@@ -116,40 +132,47 @@ main {
 
         .left {
             margin-top: 120px;
-            width: 60%;
+            width: 400px;
             height: 100%;
-            
+
+
             .eclipses {
                 width: 100%;
-                height: 100%    ;
+                height: 100%;
                 position: absolute;
                 z-index: -4;
-
-                img {
+                box-sizing: border-box;
+                overflow: hidden;
+                width: 400px;
+                img {   
                     position: absolute;
                 }
 
 
                 .robo {
                     z-index: 10;
-                    width: 50%;
+                    width: 400px;
                     left: 10px;
                     top: 40px;
                 }
-                .ec4{
+
+                .ec4 {
                     position: absolute;
                     left: 430px;
                 }
-                .ec3{
+
+                .ec3 {
                     position: absolute;
                     left: 150px;
                 }
-                .ec2{
+
+                .ec2 {
                     position: absolute;
                     top: 80px;
                     left: 70px;
                 }
-                .ec1{
+
+                .ec1 {
                     position: absolute;
                     top: 350px;
                     left: 150px;
@@ -157,21 +180,22 @@ main {
             }
         }
     }
-    .cards{
-        
+
+    .cards {
+
         margin-bottom: 115px;
         border-radius: 12px;
         width: fit-content;
         height: fit-content;
         background-color: #3e3c3c5e;
-        
+
         display: flex;
         justify-content: space-between;
-        padding: 15px 55px ;
+        padding: 15px 55px;
         gap: 40px;
 
-        .card{
-            
+        .card {
+
             transition: 0.3s;
             border-radius: 15px;
             display: flex;
@@ -181,13 +205,13 @@ main {
             width: 200px;
             height: 200px;
             background-color: #3e3c3c5e;
-            
-            img{
+
+            img {
                 margin-top: 45px;
                 width: fit-content;
             }
 
-            p{
+            p {
                 color: white;
                 font-size: 18px;
                 margin-top: 25px;
@@ -195,18 +219,18 @@ main {
                 width: 60%;
             }
         }
-        .card:hover{
+
+        .card:hover {
             background-color: #361fe75e;
         }
 
 
     }
 
-    
-/* cards ends ---------------------- */
 
-    .back-white{
-        background-color: black;
+    /* cards ends ---------------------- */
+
+    .back-white {
         overflow: hidden;
         position: absolute;
         width: 100%;
@@ -214,49 +238,91 @@ main {
         margin: -100px;
         z-index: -40;
 
-        .circle1{
+        .circle1 {
             width: 350px;
             height: 350px;
             border-radius: 50%;
             position: absolute;
             top: 250px;
             left: -175px;
-            background-image: radial-gradient(#1FC3E7D7 , #1F34E7 );
+            background-image: radial-gradient(#1FC3E7D7, #1F34E7);
             filter: blur(180px);
         }
-        .circle2{
+
+        .circle2 {
             width: 350px;
             height: 350px;
             border-radius: 50%;
             position: absolute;
             top: 550px;
             left: 220px;
-            background-image: radial-gradient(#1FC3E7D7 , #1F34E7 );
+            background-image: radial-gradient(#1FC3E7D7, #1F34E7);
             filter: blur(250px);
         }
-        .circle3{
+
+        .circle3 {
             width: 800px;
             height: 800px;
             border-radius: 50%;
             position: absolute;
             top: -290px;
             right: -250px;
-            background-image: radial-gradient(#1FC3E7D7 , #1F34E7 );
+            background-image: radial-gradient(#1FC3E7D7, #1F34E7);
             filter: blur(140px);
             opacity: 0.4;
         }
 
-        .circle4{
+        .circle4 {
             width: 800px;
             height: 800px;
             border-radius: 50%;
             position: absolute;
             bottom: -600px;
             right: -350px;
-            background-image: radial-gradient(#1FC3E7D7 , #1F34E7 );
+            background-image: radial-gradient(#1FC3E7D7, #1F34E7);
             filter: blur(140px);
             opacity: 0.4;
         }
     }
 }
 
+
+
+@media (max-width: 800px) {
+
+    nav ul {
+        display: none !important;
+    }
+
+    main .back-white {
+        overflow-x: hidden;
+        height: 300vh;
+    }
+
+    /* body {
+        overflow: auto;
+        justify-content: center;
+    } */
+
+    main .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 140px;
+        height: auto;
+    }
+
+    main .landing {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .right {
+            text-align: center;
+        }
+    }
+
+    header nav .signup .fa-bars {
+        display: flex !important;
+    }
+}
