@@ -17,10 +17,7 @@ setTimeout(() => {
         timer = 10000-timer*10
         clearInterval(k)
         h1.innerText = "Your score: "+timer
-
-
     }
-
     );
 
 
