@@ -1,8 +1,10 @@
-
+let enemy_car_pic = ["assets/enemy_car.jpg","assets/enemy_car2","assets/enemy_car3","assets/enemy_car4", "assets/enemy_car5"]
 class EnemyCar {
     constructor() {
         let enemy_car = document.createElement("div")
         enemy_car.classList.add("enemy-car")
+        let random = Math.floor(Math.random()*enemy_car_pic.length)
+        enemy_car.style.backgroundImage = `url(${enemy_car_pic[random]})`
         let xpos = randompos[Math.floor(Math.random() * 4)]
         enemy_car.style.top = `0px`
         enemy_car.style.left = `${xpos}px`
@@ -32,7 +34,7 @@ class EnemyCar {
     isCollide(player_car) {
         let player_rect = player_car.getBoundingClientRect()
         let enemy_rect = this.car.getBoundingClientRect()
-        let margin_top = 15
+        let margin_top = 25
         let margin_left = 15
         return !(((player_rect.top + player_rect.height) < (enemy_rect.top + margin_top)) ||
             ((player_rect.top + margin_top) > (enemy_rect.top + enemy_rect.height)) ||
@@ -96,7 +98,7 @@ function checkForSurrondings(player_rect) {
     }
 }
 
-let player_move_speed = 2;
+let player_move_speed = 2.4;
 let gameplayLoop;
 let mainLoop;
 let score_calc
@@ -128,7 +130,7 @@ function gameStart() {
     score = 0
     let spawn_speed = 2500
     let move_speed = 2
-    let road_speed = 1000
+    let road_speed = 500
     let score_increment = 1
     game_area.style.animation = `road ${road_speed}s infinite linear`
 
@@ -154,8 +156,8 @@ function gameStart() {
     mainLoop = setInterval(() => {
         // spawnCars(spawn_speed)
 
-        if (spawn_speed > 800) {
-            move_speed += 0.2
+        if (spawn_speed > 900) {
+            move_speed += 0.3
             road_speed -= 50
             spawn_speed -= 200
             game_area.style.animation = `road ${road_speed}s infinite linear`

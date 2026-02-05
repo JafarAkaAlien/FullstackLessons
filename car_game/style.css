@@ -31,7 +31,7 @@ body {
     top: -200px;
     width: 90px;
     height: 180px;
-    background-image: url(assets/enemy_car.png);
+    background-image: url("assets/enemy_car.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
