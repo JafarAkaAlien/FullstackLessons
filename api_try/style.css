@@ -1,0 +1,22 @@
+.cards{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    /* justify-content: space-between; */
+    
+    /* flex-wrap: wrap; */
+
+    grid-template-columns: repeat(auto-fit,300px);
+    justify-content: center;
+    
+    row-gap: 30px;
+}
+
+.card{
+    height: 470px !important;
+    transition: 0.5s !important;
+    cursor: pointer;
+}
+.card:hover{
+    scale: 1.05;
+}
