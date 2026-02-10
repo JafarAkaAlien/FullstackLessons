@@ -1,10 +1,11 @@
-let enemy_car_pic = ["assets/enemy_car.jpg","assets/enemy_car2","assets/enemy_car3","assets/enemy_car4", "assets/enemy_car5"]
+let enemy_car_pic = ["assets/enemy_car.png","assets/enemy_car2.png","assets/enemy_car3.png","assets/enemy_car4.png", "assets/enemy_car5.png"]
 class EnemyCar {
     constructor() {
         let enemy_car = document.createElement("div")
         enemy_car.classList.add("enemy-car")
         let random = Math.floor(Math.random()*enemy_car_pic.length)
         enemy_car.style.backgroundImage = `url(${enemy_car_pic[random]})`
+        // enemy_car.style.backgroundImage = `url('assets/enemy_car.png')`
         let xpos = randompos[Math.floor(Math.random() * 4)]
         enemy_car.style.top = `0px`
         enemy_car.style.left = `${xpos}px`
@@ -12,7 +13,7 @@ class EnemyCar {
     }
 
     movement(move_speed) {
-        let ycord = -50
+        let ycord = -200
         let isGameGoing = true
 
         let k = setInterval(() => {
@@ -130,12 +131,12 @@ function gameStart() {
     score = 0
     let spawn_speed = 2500
     let move_speed = 2
-    let road_speed = 500
+    let road_speed = 1000
     let score_increment = 1
     game_area.style.animation = `road ${road_speed}s infinite linear`
 
     gameplayLoop = setInterval(() => {
-        let enemyCar = new EnemyCar()
+        let enemyCar =new EnemyCar()
         let cars = []
         cars.push(enemyCar)
         document.body.appendChild(enemyCar.car)
@@ -156,7 +157,7 @@ function gameStart() {
     mainLoop = setInterval(() => {
         // spawnCars(spawn_speed)
 
-        if (spawn_speed > 900) {
+        if (spawn_speed > 800) {
             move_speed += 0.3
             road_speed -= 50
             spawn_speed -= 200

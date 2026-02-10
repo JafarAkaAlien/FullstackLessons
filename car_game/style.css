@@ -28,7 +28,7 @@ body {
 .enemy-car {
     position: absolute;
     z-index: 50;
-    top: -200px;
+    top: -9000px;
     width: 90px;
     height: 180px;
     background-image: url("assets/enemy_car.png");
