@@ -1,0 +1,18 @@
+.card {
+
+    width: 350px;
+    height: 550px;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center ;
+
+}
+
+
+.card-img {
+    /* vertical-align:baseline; */
+    width: 80% !important;
+    /* height: 400px !important; */
+    object-fit: cover;
+}

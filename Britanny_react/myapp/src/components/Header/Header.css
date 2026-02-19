@@ -28,6 +28,9 @@ header{
             padding: 12px 30px;
             transition: 0.5s;
             font-weight: bold;
+            a{
+                background-color: transparent;
+            }
         }
         li:hover{
             background-color: antiquewhite;
@@ -40,6 +43,9 @@ header{
 .active{
     background-color: #2349FF;
     color: white;
+    a{
+        color: white;
+    }
 }
 .active:hover{
     background-color: #647cf4d9;
